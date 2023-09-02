@@ -6,7 +6,7 @@ import { IProject } from "../../../interfaces/project.interface"
 const projects: IProject[] = [{
     background: 'portfolio.png',
     link: '/',
-    github: 'https://github.com/RamPonce7/Angular/tree/master/movie',
+    github: 'https://github.com/RamPonce7/portfolio',
     title: {
         ENG: 'Portfolio',
         ESP: 'Portafolio'
