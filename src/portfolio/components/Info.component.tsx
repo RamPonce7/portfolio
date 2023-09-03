@@ -1,14 +1,15 @@
 import { Avatar, Box, Grid, IconButton, Paper, Snackbar, Stack, Tooltip, Typography, useTheme } from '@mui/material'
-
+import DescriptionIcon from '@mui/icons-material/Description';
 import { useLangContext } from '../state/lang/langContext';
 import { GitHub, LinkedIn, Mail } from '@mui/icons-material';
 import { useState } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useConfigAppContext } from '../state/configApp/configAppContext';
+
 
 export const InfoComponent = () => {
     const theme = useTheme()
     const { w } = useLangContext()
-    const { pathname } = useLocation()
+    const { page } = useConfigAppContext()
 
     const [open, setOpen] = useState(false);
 
@@ -123,13 +124,19 @@ export const InfoComponent = () => {
                             onClose={handleClose}
                             message="ramponcemtz@gmail.com"
                         />
+                        <IconButton onClick={() => {
+                            window.open('http://ramponce7.com/assets/ResumeFullRam2023.pdf', '_blank');
+                        }}  >
+                            < DescriptionIcon />
+                        </IconButton>
+
                     </Stack>
 
 
 
                 </Paper>
 
-                {pathname === '/' && (<Paper sx={{
+                {page === 'Portfolio' && (<Paper sx={{
                     padding: 2,
                     [theme.breakpoints.only('sm')]: {
                         height: 'fit-content'
@@ -173,7 +180,7 @@ export const InfoComponent = () => {
                     </Grid>
                 </Paper>)}
 
-                {pathname !== '/' && (<Paper sx={{
+                {page === 'Experience' && (<Paper sx={{
                     padding: 2,
 
                     [theme.breakpoints.only('sm')]: {

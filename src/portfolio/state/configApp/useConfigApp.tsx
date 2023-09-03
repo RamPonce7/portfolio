@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 export const useConfigApp = () => {
 
-
+    const [page, setPage] = useState<'Portfolio' | 'Experience'>('Portfolio')
     const [typeTheme, setTypeTheme] = useState<'D' | 'L'>('D')
 
     const toggleTheme = () => {
@@ -16,5 +16,5 @@ export const useConfigApp = () => {
 
 
 
-    return { toggleTheme, typeTheme }
+    return { toggleTheme, typeTheme, page, setPage }
 }
