@@ -1,6 +1,7 @@
-import { Box, useTheme } from "@mui/material"
+import { Box, Grid, Paper, Stack, Typography, useTheme } from "@mui/material"
 import WorkComponent from "./Work.component"
 import { IWork } from "../../../interfaces/work.interface"
+import { useLangContext } from "../../../state/lang/langContext"
 
 const works: IWork[] = [
     {
@@ -127,6 +128,7 @@ const works: IWork[] = [
 export const WorksComponent = () => {
 
     const theme = useTheme()
+    const { w } = useLangContext()
     return (
         <Box sx={{
             [theme.breakpoints.up('md')]: {
@@ -135,6 +137,40 @@ export const WorksComponent = () => {
 
         }}>
             {works.map((work, index) => (<WorkComponent work={work} key={index} index={index} />))}
+
+            <Paper sx={{
+                padding: 2,
+                display: 'none',
+                mt: 1,
+                [theme.breakpoints.only('xs')]: {
+                    display: 'block'
+
+                },
+            }}>
+                <Grid container alignItems={'center'}>
+                    <Grid item xs={12} mb={1}>
+                        <Typography variant='body1' fontWeight={600} color={theme.palette.primary.dark} >
+                            {w('education')}
+                        </Typography>
+                    </Grid>
+
+                    <Grid item xs={12} mb={1}>
+                        <Stack>
+                            <Typography variant='body2' mt={1} >
+                                {w('school')}
+                            </Typography>
+                            <Typography variant='caption' mt={1} color="text.secondary">
+                                {w('career')}
+                            </Typography>
+                            <Typography variant='caption' mt={1} color="text.secondary">
+                                <i> 07/2013 - 07/2017</i>
+                            </Typography>
+
+
+                        </Stack>
+                    </Grid>
+                </Grid>
+            </Paper>
 
         </Box>
     )

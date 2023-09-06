@@ -43,12 +43,8 @@ export const InfoComponent = () => {
             }} >
                 <Paper sx={{
                     padding: 3,
-                    [theme.breakpoints.down('lg')]: {
-                        mb: 1
-                    },
-                    [theme.breakpoints.only('lg')]: {
-                        mb: 1
-                    },
+                    mb: 1,
+
                     [theme.breakpoints.only('sm')]: {
                         mr: 1
                     },
@@ -185,6 +181,11 @@ export const InfoComponent = () => {
 
                     [theme.breakpoints.only('sm')]: {
                         height: 'fit-content'
+
+                    },
+
+                    [theme.breakpoints.only('xs')]: {
+                        display: 'none'
 
                     },
                 }}>
