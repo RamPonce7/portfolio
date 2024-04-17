@@ -5,6 +5,21 @@ import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import SchoolIcon from '@mui/icons-material/School';
 const courses = [
     {
+        img: '/img/flutter.png',
+        year: '2024',
+        platform: 'Udemy',
+        tags: ['Flutter', 'Dart', 'Go Router', 'Provider', 'Http', 'Push Notification', 'Local Storage', 'Animations', 'Widgets', 'State Management', 'PlayStore']
+
+    },
+
+    {
+        img: '/img/redux.png',
+        year: '2024',
+        platform: 'Udemy',
+        tags: ['Redux', 'Redux Toolkit', 'RTK Query', 'Persist', 'Middlewares', 'Selectors', 'Slices', 'Async Actions', 'Thunks']
+
+    },
+    {
         img: '/img/next.png',
         year: '2023',
         platform: 'Udemy',

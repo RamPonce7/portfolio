@@ -121,7 +121,7 @@ export const InfoComponent = () => {
                             message="ramponcemtz@gmail.com"
                         />
                         <IconButton onClick={() => {
-                            window.open('http://ramponce7.com/assets/ResumeFullRam2023.pdf', '_blank');
+                            window.open('http://ramponce7.com/assets/ResumeFullRam2024.pdf', '_blank');
                         }}  >
                             < DescriptionIcon />
                         </IconButton>

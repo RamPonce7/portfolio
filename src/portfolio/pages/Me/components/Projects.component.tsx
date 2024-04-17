@@ -5,6 +5,34 @@ import { IProject } from "../../../interfaces/project.interface"
 
 const projects: IProject[] = [
     {
+        background: 'cocktails-cart.png',
+        link: 'https://ramponce7.com/cocktails/',
+        github: 'https://github.com/RamPonce7/cocktails-cart',
+        title: {
+            ENG: 'Cocktails Cart! (React + Redux)',
+            ESP: 'Cocktails Cart! (React + Redux)'
+        },
+        techs: ['react', 'ts', 'redux'],
+        description: {
+            ENG: [
+                'Web application developed in React. Connected to thecocktaildb API using Axios.',
+                'Using Redux Toolkit for state management.',
+                'Capability to add cocktails to your cart.',
+                'Search functionality for cocktails by name.',
+                'Ability to add cocktails to your favorites.',
+                'View your cart, total amount, and start the checkout process.'
+            ],
+            ESP: [
+                'Aplicación web desarrollada en React. Conectada a la API de thecocktaildb utilizando Axios.',
+                'Utilizando Redux Toolkit para la gestión del estado.',
+                'Capacidad para agregar cócteles a tu carrito.',
+                'Funcionalidad de búsqueda de cócteles por nombre.',
+                'Posibilidad de agregar cócteles a tus favoritos.',
+                'Ver tu carrito, el monto total e iniciar el proceso de pago.'
+            ]
+        }
+    },
+    {
         background: 'movies-react.png',
         link: 'https://ramponce7.com/projects/movies_react/',
         github: 'https://github.com/RamPonce7/movies-react',

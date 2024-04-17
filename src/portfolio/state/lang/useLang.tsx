@@ -17,6 +17,14 @@ const langWords: any = {
         courses_title: 'Cursos',
         projects_title: 'Proyectos',
 
+        //Course 18 Flutter Expert
+        course_title_18: 'Flutter Experto',
+        course_about_18: 'Flutter Experto.',
+
+        //Course 17 Redux Toolkit
+        course_title_17: 'Redux Toolkit',
+        course_about_17: 'Redux Toolkit.',
+
         //Course 16 ReactJs Intermediate
         course_title_16: 'ReactJs Avanzado / NextJs',
         course_about_16: 'ReactJs Avanzado / NextJs.',
@@ -84,6 +92,13 @@ const langWords: any = {
         description_3: 'Experience with collaborative work and Agile (Scrum)',
         courses_title: 'Courses',
         projects_title: 'Projects',
+        //Course 18 Flutter Expert
+        course_title_18: 'Flutter Expert',
+        course_about_18: 'Flutter Expert.',
+
+        //Course 17 Redux Toolkit
+        course_title_17: 'Redux Toolkit',
+        course_about_17: 'Redux Toolkit.',
         //Course 16 ReactJs Intermediate
         course_title_16: 'ReactJs Advance / NextJs',
         course_about_16: 'ReactJs Advance / NextJs.',
